@@ -1,7 +1,7 @@
 from django.urls import path
 
-from blog.views import hello_world
+from blog.views import inserir_categoria
 
 urlpatterns = [
-    path('', hello_world),
+    path('inserir_categoria', inserir_categoria),
 ]
