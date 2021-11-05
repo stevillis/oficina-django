@@ -7,7 +7,7 @@
                 {{ post.criado_em.date }} |&nbsp;
                 Categorias:&nbsp;
                 {% for categoria in post.categorias.all %}
-                    <a href="">
+                    <a href="{% url 'post_categoria' categoria.nome %}">
                         {{ categoria.nome }}
                     </a>&nbsp;
                 {% endfor %}
