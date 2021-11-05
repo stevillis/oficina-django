@@ -4,7 +4,7 @@ from blog.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['titulo', 'conteudo', 'criado_em', 'alterado_em']
 
 
 admin.site.register(Post, PostAdmin)
